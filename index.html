@@ -9,6 +9,18 @@
             float: left;
             margin-right: 15px;
         }
+		.image-right {
+            float: right;
+            margin-left: 15px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -28,9 +40,13 @@
 <br>
 <p>I am a sophomore that attends the University of Wisconsin-Madison. I am a Computer Science major always seeking opportunities to expand my horizons and broaden my knowledge.</p>
 <p>Some of my hobbies include playing the piano, playing video games, and climbing.</p>
-
-<img src="images/Piano.jpg" alt="Piano">
-<img src="images/Climbing.jpg" alt="Climbing">
-
+<br>
+<br>
+<br>
+<br>
+<div class="image-grid">
+	<img src="images/Piano.jpg" alt="Piano" class="image-left" width="350">
+	<img src="images/Climbing.jpg" alt="Climbing" class="image-right" width="350">
+</div>
 </body>
 </html>
